@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'General Sans';
+    src: url('/assets/fonts/GeneralSans-Regular.woff2') format('woff2'),
+         url('/assets/fonts/GeneralSans-Regular.woff') format('woff'),
+         url('/assets/fonts/GeneralSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'General Sans', sans-serif;
+  }
+
+
+ /* MENU COMEÇA AQUI */
+  
+  /* Sidebar */
+  .sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #4F5B67;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+/* Adicione ao Sidebar.css */
+.sidebar ul li:hover {
+    background: #F7F7FB;
+    position: relative;
+    color: #0D0D54;
+}
+
+
+.sidebar ul li:hover::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #4040F2;
+}
+
+.sidebar ul .logo:hover::after {
+    display: none;
+}
+
+
+  .sidebar ul li img {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .sidebar ul .logo {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    font-weight: line;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 15px;
+    padding: 0; /* Removendo padding extra */
+  }
+  
+  .sidebar ul .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: -12px; 
+  }
+
+.sidebar ul .logo:hover {
+    background: none;
+  }
+  
+ 
+  /* User Menu */
+  .usermenu {
+    margin-bottom: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .usermenu .fotomenu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .usermenu .dadosmenu {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+  
+  .usermenu .dadosmenu li {
+    list-style: none;
+    color: #4F5B67;
+  }
+  
+   /* MENU ACABA AQUI */
